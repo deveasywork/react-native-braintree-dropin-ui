@@ -97,8 +97,12 @@ RCT_EXPORT_METHOD(show:(NSDictionary*)options resolver:(RCTPromiseResolveBlock)r
 
         self.viewController = [[PKPaymentAuthorizationViewController alloc] initWithPaymentRequest: self.paymentRequest];
         self.viewController.delegate = self;
-    }else{
+    } else{
         request.applePayDisabled = YES;
+    }
+
+    if(![options[@"payPal"] boolValue]){ //disable paypal
+        request.paypalDisabled = YES;
     }
 
     BTDropInController *dropIn = [[BTDropInController alloc] initWithAuthorization:clientToken request:request handler:^(BTDropInController * _Nonnull controller, BTDropInResult * _Nullable result, NSError * _Nullable error) {
