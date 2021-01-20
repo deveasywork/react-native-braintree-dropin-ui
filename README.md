@@ -252,7 +252,7 @@ BraintreeDropIn.show({
   googlePay: true,
   applePay: true,
   vaultManager: true,
-  paypal: true, //disable Paypal
+  paypal: false, //disable Paypal
   cardDisabled: false,
   darkTheme: true,
 })
@@ -285,7 +285,7 @@ BraintreeDropIn.show({
   googlePay: true,
   applePay: true,
   vaultManager: true,
-  paypal: true,  // disable Paypal
+  paypal: false,  // disable Paypal
   cardDisabled: false,
   darkTheme: true,
 })
