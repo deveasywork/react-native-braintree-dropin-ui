@@ -53,8 +53,11 @@ public class RNBraintreeDropInModule extends ReactContextBaseJavaModule {
     if(options.hasKey("vaultManager")) {
       dropInRequest.vaultManager(options.getBoolean("vaultManager"));
     }
-
-    dropInRequest.disablePayPal();    
+    
+    if(!options.getBoolean("payPal")){ //disable paypal
+      dropInRequest.disablePayPal();
+    }
+    
     dropInRequest.collectDeviceData(true);
 
     if(options.getBoolean("googlePay")){
