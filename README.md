@@ -13,7 +13,7 @@ For React Native versions >= 0.60
 
 IOS
 ```bash
-npm install https://github.com/siankhon/react-native-braintree-dropin-ui.git --save
+npm install https://github.com/deveasywork/react-native-braintree-dropin-ui.git --save
 
 cd ./ios
 pod install
@@ -21,7 +21,7 @@ pod install
 
 Android
 ```bash
-npm install https://github.com/siankhon/react-native-braintree-dropin-ui.git --save
+npm install https://github.com/deveasywork/react-native-braintree-dropin-ui.git --save
 ```
 
 ## Configurate Payment Method(For ALL RN VERSIONS)
